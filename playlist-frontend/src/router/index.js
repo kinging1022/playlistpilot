@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import TimeMachine from '@/views/TimeMachine.vue'
 import AiCurator from '@/views/AiCurator.vue'
+import LoginSuccess from '@/views/LoginSuccess.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,6 +29,11 @@ const router = createRouter({
       path: '/ai-curator',
       name: 'ai-curator',
       component: AiCurator,
+    },
+    {
+      path: '/auth',
+      name: 'login-success',
+      component: LoginSuccess,
     },
   ],
 })
